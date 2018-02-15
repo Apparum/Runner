@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013921280038}
   - 114: {fileID: 114000012703052714}
+  - 114: {fileID: 114000013597362944}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -53,3 +54,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartDelay: 1
   completeLevelUI: {fileID: 0}
+--- !u!114 &114000013597362944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011022678022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acdfb492867b6d46afc28b35c9896f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  obstacle: {fileID: 1000010885724820, guid: aaef0b2d97403c94087f6274a581d53d, type: 2}

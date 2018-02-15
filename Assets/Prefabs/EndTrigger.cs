@@ -4,8 +4,8 @@ public class EndTrigger : MonoBehaviour {
 
 	public GameManager gameManager;
 
-	void OnTriggerEnter()
+	void OnTriggerEnter(Collider collider)
 	{
-		gameManager.CompleteLevel();
+		if (collider.name == "Player") gameManager.CompleteLevel();
 	}
 }
