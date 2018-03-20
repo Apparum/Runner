@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 	 * Sons des bonus etc...
 	 * Musique
 	 * Affichage special avec certains score (milestone)
-	 * Rajouter des éléments (petit mur droit en face de la position en x / 8-12 blocs individuel random / 3 ptites diag -/-/-/- et dans l'autre sens)  
+	 * Rajouter des éléments
 	 * Deposer des coins
 	 * 
 	 */
@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour {
 	{
 		if (!gameHasEnded)
 		{
+            Score.proxscore = 0;
 			gameHasEnded = true;
 			Debug.Log("GAME OVER");
 			Invoke("Restart", restartDelay);
